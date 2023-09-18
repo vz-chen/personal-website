@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { TfiArrowRight } from "react-icons/tfi";
 import { TfiArrowLeft } from "react-icons/tfi";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-import StrawbFace from "../assets/StrawbFace.jpg";
+import Lab from "../assets/Lab.png";
+import BioTron from "../assets/BioTron.jpeg";
+import CIBCSquare from "../assets/CIBC-Square.jpeg";
 import { useNavigate } from "react-router-dom";
+import Mousey from "../assets/Mousey.jpg";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -34,21 +37,24 @@ const Projects = () => {
 
             <div className="border border-black w-1/3 h-80 rounded-2xl relative">
               <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[180px] mt-7 rounded-2xl">
-                <img src={StrawbFace} alt="" className=""></img>
+                <img src={CIBCSquare} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">
                 Application Developer<br></br>CIBC
               </p>
               <div className="flex flex-row">
                 <p className="pl-7">Co-op</p>
-                <button onClick={() => navigate("/CIBC")}>
-                  <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
+                <button
+                  onClick={() => navigate("/CIBC")}
+                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
+                >
+                  <MdOutlineArrowForwardIos />
                 </button>
               </div>
             </div>
-            <div className="border border-black w-1/3 h-80 rounded-2xl">
-              <div className="border border-black w-5/6 mx-auto h-[180px] mt-7 rounded-2xl">
-                hi
+            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
+              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[180px] mt-7 rounded-2xl">
+                <img src={Lab} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">
                 Biomechanics Research Assistant<br></br>Structural Biomechanics
@@ -60,21 +66,26 @@ const Projects = () => {
                   onClick={() => navigate("/URA")}
                   className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
                 >
-                  <MdOutlineArrowForwardIos/>
+                  <MdOutlineArrowForwardIos />
                 </button>
               </div>
             </div>
 
-            <div className="border border-black w-1/3 h-80 rounded-2xl">
-              <div className="border border-black w-5/6 mx-auto h-[180px] mt-7 rounded-2xl">
-                hi
+            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
+              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[180px] mt-7 rounded-2xl">
+                <img src={BioTron} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">
                 Software & Hardware Member<br></br>UW Bio Mechatronics
               </p>
               <div className="flex flex-row">
                 <p className="pl-7">Design Team</p>
-                <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
+                <button
+                  onClick={() => navigate("/BioTron")}
+                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
+                >
+                  <MdOutlineArrowForwardIos />
+                </button>
               </div>
             </div>
 
@@ -110,9 +121,9 @@ const Projects = () => {
                 <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
               </div>
             </div>
-            <div className="border border-black w-1/3 h-80 rounded-2xl">
-              <div className="border border-black w-5/6 mx-auto h-[200px] mt-7 rounded-2xl">
-                hi
+            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
+              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[200px] mt-7 rounded-2xl">
+                <img src={Mousey} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">3-DOF Space Mouse</p>
               <div className="flex flex-row">

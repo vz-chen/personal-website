@@ -20,15 +20,15 @@ const iGEM = () => {
             className="text-[20px] mx-auto py-5 mx-[170px]"
             style={{ fontFamily: "Safira" }}
           >
-            <h3>@ UW iGEM</h3>
+            <h3>@ UW International Genetically Engineered Machine (iGEM)</h3>
           </div>
           <p className="italic py-5 text-l">Aug. 2023 - Present</p>
           <p className="w-full text-xl bg-green-500 py-5">
-            iGEM is a non-profit organization that supports the advancement of research in
-            synthetic biology. They allow students to be at the forefront of
-            innovation by giving them resources to solve real-world problems
-            that concerns their communities and present them annually in Paris,
-            France.
+            iGEM is a non-profit organization that supports the advancement of
+            research in synthetic biology. They allow students to be at the
+            forefront of innovation by giving them resources to solve real-world
+            problems that concerns their communities and present them annually
+            in Paris, France.
           </p>
           <li className="w-full text-xl mx-auto">
             Conducting biomechanics research under award-winning Professor and

@@ -7,7 +7,9 @@ import URA from "./components/URA";
 import CIBC from "./components/CIBC";
 import BioTron from "./components/BioTron";
 import IGEM from "./components/iGEM";
+import Footer from "./components/Footer";
 import { Route } from "react-router-dom";
+
 const Home = () => {
   return (
     <div>
@@ -15,8 +17,8 @@ const Home = () => {
       <About2 />
       {/* <About /> */}
       <Projects></Projects>
-      <BioTron></BioTron>
-      <IGEM></IGEM>
+      {/* <IGEM></IGEM> */}
+      <Footer></Footer>
     </div>
   );
 };
