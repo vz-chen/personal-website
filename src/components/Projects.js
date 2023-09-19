@@ -7,36 +7,42 @@ import BioTron from "../assets/BioTron.jpeg";
 import CIBCSquare from "../assets/CIBC-Square.jpeg";
 import { useNavigate } from "react-router-dom";
 import Mousey from "../assets/Mousey.jpg";
+import igem from "../assets/IGEM.jpeg";
+import Caribou from "../assets/Caribou.jpg";
+import MMHSApp from "../assets/MMHSApp.png";
 
 const Projects = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col mx-auto justify-center gap-5">
-      <div className="h-[180vh] flex flex-col justify-center">
+    <div
+      className="flex flex-col mx-auto justify-center gap-5"
+      id="explorations"
+    >
+      <div className="h-[250vh] flex flex-col justify-center">
         <h2
           className="text-[70px] mx-auto py-2"
           style={{ fontFamily: "Against" }}
         >
-          Explorations :P
+          Explorations
         </h2>
         <div className="flex flex-col mt-[20px]">
           <div
             className="text-[20px] mx-auto py-5 mx-[170px]"
             style={{ fontFamily: "Safira" }}
           >
-            <h3>Recent Experiences</h3>
+            <h3>Experiences</h3>
           </div>
 
-          <div className="flex gap-8 justify-between mx-20 px-10 pb-10">
-            <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
+          <div className="flex gap-8 justify-between mx-[80px] px-10 pb-10 grid grid-cols-3">
+            {/* <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
               <TfiArrowLeft
                 className="mx-auto my-auto"
                 style={{ strokeWidth: "1px" }}
               />
-            </div>
+            </div> */}
 
-            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
-              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[180px] mt-7 rounded-2xl">
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black bg-red-500 border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
                 <img src={CIBCSquare} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">
@@ -52,8 +58,9 @@ const Projects = () => {
                 </button>
               </div>
             </div>
-            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
-              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[180px] mt-7 rounded-2xl">
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
                 <img src={Lab} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">
@@ -71,9 +78,10 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
-              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[180px] mt-7 rounded-2xl">
-                <img src={BioTron} alt="" className="h-full"></img>
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={BioTron} alt="" className="h-full w-full"></img>
               </div>
               <p className="pl-7 py-3">
                 Software & Hardware Member<br></br>UW Bio Mechatronics
@@ -89,12 +97,31 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={igem} alt="" className="h-full w-full"></img>
+              </div>
+              <p className="pl-7 py-3">
+                Math & Modelling, Human Practice<br></br>UW iGEM
+              </p>
+              <div className="flex flex-row">
+                <p className="pl-7">Design Team</p>
+                <button
+                  onClick={() => navigate("/IGEM")}
+                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
+                >
+                  <MdOutlineArrowForwardIos />
+                </button>
+              </div>
+            </div>
+
+            {/* <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
               <TfiArrowRight
                 className="mx-auto my-auto"
                 style={{ strokeWidth: "1px" }}
               />
-            </div>
+            </div> */}
           </div>
           <div
             className="text-[20px] mx-auto py-5 mx-[170px]"
@@ -103,17 +130,17 @@ const Projects = () => {
             <h3>Projects</h3>
           </div>
 
-          <div className="flex gap-8 justify-between mx-20 px-10 pb-10">
-            <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
+          <div className="flex gap-8 justify-between mx-[80px] px-10 pb-10 grid grid-cols-3">
+            {/* <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
               <TfiArrowLeft
                 className="mx-auto my-auto"
                 style={{ strokeWidth: "1px" }}
               />
-            </div>
+            </div> */}
 
-            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
-              <div className="border border-black w-5/6 mx-auto h-[200px] mt-7 rounded-2xl">
-                hi
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
               </div>
               <p className="pl-7 py-3">Heart Rate Facial Detection</p>
               <div className="flex flex-row">
@@ -121,9 +148,10 @@ const Projects = () => {
                 <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
               </div>
             </div>
-            <div className="border border-black w-1/3 h-80 rounded-2xl relative">
-              <div className="border border-black bg-red-500 w-5/6 mx-auto overflow-y-hidden h-[200px] mt-7 rounded-2xl">
-                <img src={Mousey} alt="" className="h-full"></img>
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={Mousey} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">3-DOF Space Mouse</p>
               <div className="flex flex-row">
@@ -132,23 +160,36 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="border border-black w-1/3 h-80 rounded-2xl">
-              <div className="border border-black w-5/6 mx-auto h-[200px] mt-7 rounded-2xl">
-                hi
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={Caribou} alt="" className="w-full h-full"></img>
               </div>
-              <p className="pl-7 py-3">Ultrasound Pulse Detection</p>
+              <p className="pl-7 py-3">Caribou Puzzle</p>
               <div className="flex flex-row">
-                <p className="pl-7">C++, OpenGL</p>
+                <p className="pl-7">SolidWorks</p>
                 <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
               </div>
             </div>
 
-            <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={MMHSApp} alt="" className="w-full h-full"></img>
+              </div>
+              <p className="pl-7 py-3">Milliken App</p>
+              <div className="flex flex-row">
+                <p className="pl-7">Figma</p>
+                <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
+              </div>
+            </div>
+
+            {/* <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
               <TfiArrowRight
                 className="mx-auto my-auto"
                 style={{ strokeWidth: "1px" }}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

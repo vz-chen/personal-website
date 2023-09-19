@@ -1,5 +1,5 @@
 import React from "react";
-import StrawbFace from "../assets/StrawbFace.jpg";
+import Vanessa from "../assets/Vanessa.JPG";
 import butterfly from "../assets/butterfly.svg";
 
 import Gradient from "../assets/Gradient.png";
@@ -8,6 +8,8 @@ import { keyframes } from "@emotion/react";
 
 import explore from "../assets/Explore.svg";
 import { LiaLongArrowAltDownSolid } from "react-icons/lia";
+import { HashLink as Link } from "react-router-hash-link";
+
 {
   /*className={`w-full flex flex-col md:flex-row ${styles.paddingY} bg-red-500`} */
 }
@@ -27,16 +29,21 @@ const About = () => {
         <div className="w-[150px] relative mx-auto mt-20">
           <img className="flex mx-auto" alt="" src={explore}></img>
           <div className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[50px] h-[50px] text-[30px] ease-in-out transition-all hover:text-[40px]">
-            <LiaLongArrowAltDownSolid className="mx-auto mt-2" />
+            <Link to={`/#explorations`}>
+              <LiaLongArrowAltDownSolid className="mx-auto mt-2" />
+            </Link>
           </div>
         </div>
       </div>
-      <div className="flex flex-row h-[90vh] items-center w-5/6 mx-auto">
+      <div
+        className="flex flex-row h-[100vh] items-center w-5/6 mx-auto"
+        id="about"
+      >
         <div className="w-1/3">
           <img
             className="border border-black h-full p-5 border-[1px] mx-auto rounded-full"
             alt=""
-            src={StrawbFace}
+            src={Vanessa}
           ></img>
         </div>
         <div className="flex flex-col w-2/3 mx-auto px-20">
@@ -46,17 +53,20 @@ const About = () => {
           >
             About Me!
           </h2>
-          <p className="w-full text-xl mx-auto">
-            Hi! I'm Vanessa, a 2A biomedical engineering student at the
-            University of Waterloo. I love everything that has to do with
-            improving human health. My interests lie in software, hardware,
-            product design and{" "}
-            <span className="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
-              sushi.
-            </span>{" "}
-            <br></br>
-            <br></br>Feel free to take a look at what I've been up to!
-          </p>
+          <div className="flex flex-row">
+            {" "}
+            <p className="w-full text-xl mx-auto">
+              Hi! I'm Vanessa, a 2A biomedical engineering student at the
+              University of Waterloo. I love everything that has to do with
+              improving human health. My interests lie in software, hardware,
+              product design and{" "}
+              <span className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
+                sushi.
+              </span>{" "}
+              <br></br>
+              <br></br>Feel free to take a look at what I've been up to!
+            </p>
+          </div>
         </div>
       </div>
     </div>
