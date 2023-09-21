@@ -18,7 +18,7 @@ const Projects = () => {
       className="flex flex-col mx-auto justify-center gap-5"
       id="explorations"
     >
-      <div className="h-[250vh] flex flex-col justify-center">
+      <div className="h-[220vh] flex flex-col justify-center">
         <h2
           className="text-[70px] mx-auto py-2"
           style={{ fontFamily: "Against" }}
@@ -42,8 +42,8 @@ const Projects = () => {
             </div> */}
 
             <div className="border border-black h-80 rounded-2xl relative">
-              <div className="border-b-black bg-red-500 border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
-                <img src={CIBCSquare} alt="" className="h-full"></img>
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                <img src={CIBCSquare} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">
                 Application Developer<br></br>CIBC
@@ -138,7 +138,7 @@ const Projects = () => {
               />
             </div> */}
 
-            <div className="border border-black h-80 rounded-2xl relative">
+            {/* <div className="border border-black h-80 rounded-2xl relative">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
               </div>
@@ -147,7 +147,7 @@ const Projects = () => {
                 <p className="pl-7">Python, OpenCV, sk-learn</p>
                 <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
               </div>
-            </div>
+            </div> */}
             <div className="border border-black h-80 rounded-2xl relative">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
