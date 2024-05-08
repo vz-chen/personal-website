@@ -9,7 +9,7 @@ const BioTron = () => {
     <div className="h-screen flex flex-col justify-center items-center">
       <div className="flex flex-row">
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/Explorations")}
           className="mr-auto mt-[32px] pr-[5px] text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
         >
           <MdOutlineArrowBackIos />

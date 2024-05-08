@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c20fff8.css",
-    "main.js": "/static/js/main.7443bf3a.js",
+    "main.css": "/static/css/main.3503d4b2.css",
+    "main.js": "/static/js/main.4a87fe8b.js",
+    "static/media/TearneyLab.jpg": "/static/media/TearneyLab.d7fd1798ae08fea88231.jpg",
+    "static/media/Clinostat.JPG": "/static/media/Clinostat.7ba84a6794ba2ac07b31.JPG",
     "static/media/CIBC.JPG": "/static/media/CIBC.9c17f8420a7139cab3ba.JPG",
     "static/media/Vanessa.JPG": "/static/media/Vanessa.2fd6f47294695d0ca3c7.JPG",
     "static/media/StrawbFace.jpg": "/static/media/StrawbFace.36450e119d98ee744db8.jpg",
@@ -16,18 +18,20 @@
     "static/media/Safira March.otf": "/static/media/Safira March.0255a3107451e9e0e3d7.otf",
     "static/media/CIBC-Square.jpeg": "/static/media/CIBC-Square.d1dbd1d56f2632c1b83f.jpeg",
     "static/media/Caribou.jpg": "/static/media/Caribou.eaf39af8832c710b8759.jpg",
+    "static/media/Harvard.jpeg": "/static/media/Harvard.e8ba0f8d661f4de37143.jpeg",
     "static/media/Dream Orphans.otf": "/static/media/Dream Orphans.b06a3710cb4971155186.otf",
     "static/media/against regular.otf": "/static/media/against regular.8f7659d873c76e875cfa.otf",
+    "static/media/MicroGrav.jpg": "/static/media/MicroGrav.e8b612bf233156bb2ede.jpg",
     "static/media/IGEM.jpeg": "/static/media/IGEM.96b95dfd0a3848d0f863.jpeg",
     "static/media/BioTron.jpeg": "/static/media/BioTron.c793d2ebbd142b024905.jpeg",
     "static/media/Explore.svg": "/static/media/Explore.b7fd9edbd4b243da615d41754051f466.svg",
     "static/media/butterfly.svg": "/static/media/butterfly.4b6f25f027322755da26784a2e1cc1b6.svg",
     "index.html": "/index.html",
-    "main.2c20fff8.css.map": "/static/css/main.2c20fff8.css.map",
-    "main.7443bf3a.js.map": "/static/js/main.7443bf3a.js.map"
+    "main.3503d4b2.css.map": "/static/css/main.3503d4b2.css.map",
+    "main.4a87fe8b.js.map": "/static/js/main.4a87fe8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c20fff8.css",
-    "static/js/main.7443bf3a.js"
+    "static/css/main.3503d4b2.css",
+    "static/js/main.4a87fe8b.js"
   ]
 }

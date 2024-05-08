@@ -10,15 +10,17 @@ import Mousey from "../assets/Mousey.jpg";
 import igem from "../assets/IGEM.jpeg";
 import Caribou from "../assets/Caribou.jpg";
 import MMHSApp from "../assets/MMHSApp.png";
+import Harvard from "../assets/Harvard.jpeg"
+import MicroGrav from "../assets/MicroGrav.jpg"
 
 const Projects = () => {
   const navigate = useNavigate();
   return (
     <div
-      className="flex flex-col mx-auto justify-center gap-5"
+      className="flex flex-col mx-auto justify-center gap-5 mb-20"
       id="explorations"
     >
-      <div className="h-[220vh] flex flex-col justify-center">
+      <div className="h-100 flex flex-col justify-center">
         <h2
           className="text-[70px] mx-auto py-2"
           style={{ fontFamily: "Against" }}
@@ -41,7 +43,25 @@ const Projects = () => {
               />
             </div> */}
             
-            <div className="border border-black h-80 rounded-2xl relative">
+          <div className="border border-black h-80 rounded-2xl">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                <img src={Harvard} alt="" className="w-full h-full"></img>
+              </div>
+              <p className="pl-7 py-3">
+                Mechanical Engineer Intern<br></br>Tearney Lab, Harvard Medical Schoool, Massachusetts ...
+              </p>
+              <div className="flex flex-row">
+                <p className="pl-7">Co-op</p>
+                <button
+                  onClick={() => navigate("/Tearney")}
+                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
+                >
+                  <MdOutlineArrowForwardIos />
+                </button>
+              </div>
+            </div>
+
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
                 <img src={CIBCSquare} alt="" className="w-full h-full"></img>
               </div>
@@ -59,34 +79,17 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="border border-black h-80 rounded-2xl relative">
-              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
-                <img src={CIBCSquare} alt="" className="w-full h-full"></img>
-              </div>
-              <p className="pl-7 py-3">
-                Application Developer<br></br>CIBC
-              </p>
-              <div className="flex flex-row">
-                <p className="pl-7">Co-op</p>
-                <button
-                  onClick={() => navigate("/CIBC")}
-                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
-                >
-                  <MdOutlineArrowForwardIos />
-                </button>
-              </div>
-            </div>
-            <div className="border border-black h-80 rounded-2xl relative">
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={Lab} alt="" className="h-full"></img>
               </div>
               <p className="pl-7 py-3">
-                Biomechanics Research Assistant<br></br>Structural Biomechanics
+                Electromechanical Research Assistant<br></br>Structural Biomechanics
                 Lab
               </p>
               <div className="flex flex-row">
-                <p className="pl-7">URA</p>
+                <p className="pl-7">Undergrad Research Assistant</p>
                 <button
                   onClick={() => navigate("/URA")}
                   className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
@@ -96,7 +99,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="border border-black h-80 rounded-2xl relative">
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={BioTron} alt="" className="h-full w-full"></img>
@@ -115,7 +118,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="border border-black h-80 rounded-2xl relative">
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={igem} alt="" className="h-full w-full"></img>
@@ -134,7 +137,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="border border-black h-80 rounded-2xl relative">
+            {/* <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={igem} alt="" className="h-full w-full"></img>
@@ -151,7 +154,7 @@ const Projects = () => {
                   <MdOutlineArrowForwardIos />
                 </button>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="text-[20px] w-[30px] flex transform ease-in-out transition-all hover:text-[25px] hover:text-[#F67B53]">
               <TfiArrowRight
@@ -175,7 +178,7 @@ const Projects = () => {
               />
             </div> */}
 
-            {/* <div className="border border-black h-80 rounded-2xl relative">
+            {/* <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
               </div>
@@ -185,39 +188,56 @@ const Projects = () => {
                 <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
               </div>
             </div> */}
-            <div className="border border-black h-80 rounded-2xl relative">
+
+            <div className="border border-black h-80 rounded-2xl ">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={MicroGrav} alt="" className="w-full h-full"></img>
+              </div>
+              <p className="pl-7 py-3">Microgravity Simulator/Clinostat</p>
+              <div className="flex flex-row">
+                <p className="italic pl-7">SolidWorks, Arduino, Altium</p>
+                <button 
+                onClick={() => navigate("/Clinostat")}
+                className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]">
+                <MdOutlineArrowForwardIos />
+                </button>
+              </div>
+            </div>
+
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={Mousey} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">3-DOF Space Mouse</p>
               <div className="flex flex-row">
-                <p className="pl-7">Fusion 360</p>
-                <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
+                <p className="italic pl-7">Fusion 360</p>
+                {/* <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" /> */}
               </div>
             </div>
 
-            <div className="border border-black h-80 rounded-2xl relative">
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={Caribou} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">Caribou Puzzle</p>
               <div className="flex flex-row">
-                <p className="pl-7">SolidWorks</p>
-                <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
+                <p className="italic pl-7">SolidWorks</p>
+                {/* <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" /> */}
               </div>
             </div>
 
-            <div className="border border-black h-80 rounded-2xl relative">
+            <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
                 <img src={MMHSApp} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">Milliken App</p>
               <div className="flex flex-row">
-                <p className="pl-7">Figma</p>
-                <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" />
+                <p className="italic pl-7">Figma</p>
+                {/* <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" /> */}
               </div>
             </div>
 

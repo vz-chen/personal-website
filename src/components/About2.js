@@ -56,15 +56,19 @@ const About = () => {
           <div className="flex flex-row">
             {" "}
             <p className="w-full text-xl mx-auto">
-              Hi! I'm Vanessa, a 2A biomedical engineering student at the
-              University of Waterloo. I love everything that has to do with
-              improving human health. My interests lie in software, hardware,
-              product design.
+              Welcome to my corner of the internet! I'm a <span className="font-bold">biomedical engineering student</span> at the 
+              <span className="font-bold"> University of Waterloo</span> passionate about biotech, robotics and finding a fall 2024 co-op. I'm also an avid Strava user (for running) and <span className="font-bold">lover of bunnies</span>. 
+              <br></br><br></br>
+              I'm currently an <span className="font-bold">undergraduate researcher at UW's OrthoTron lab</span> focusing on applying deep learning algorithms to smartwatch IMU data to detect arm injuries.
+              I'm also an executive member of UW's Chinese Student Association, Canada's largest Chinese social culture club.
+              <br></br><br></br>
+              In terms of skills, I am proficient in Python for application development, scripting, and in MATLAB for data analysis. 
+              I also have a solid grasp of mechanical engineering design fundamentals in SolidWorks and Fusion360. 
               {/* <span className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
                 sushi.
               </span>{" "} */}
-              <br></br>
-              <br></br>Feel free to take a look at what I've been up to!
+              <br></br><br></br>
+              <span className="italic">Feel free to take a look at what I've been up to & ask me anything!</span>
             </p>
           </div>
         </div>

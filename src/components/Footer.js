@@ -13,6 +13,7 @@ const Footer = () => {
       <h3 className="text-[20px] mb-6 italic" style={{ fontFamily: "Safira" }}>
         Let's stay connected!
       </h3>
+      <p className="italic pb-5">647-876-7128</p>
       <div className="flex flex-row">
         <a
           href="https://www.linkedin.com/in/vzchen"
