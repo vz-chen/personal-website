@@ -59,10 +59,10 @@ const About = () => {
               Hi! I'm Vanessa, a 2A biomedical engineering student at the
               University of Waterloo. I love everything that has to do with
               improving human health. My interests lie in software, hardware,
-              product design and{" "}
-              <span className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
+              product design.
+              {/* <span className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-pink-400 to-yellow-500">
                 sushi.
-              </span>{" "}
+              </span>{" "} */}
               <br></br>
               <br></br>Feel free to take a look at what I've been up to!
             </p>

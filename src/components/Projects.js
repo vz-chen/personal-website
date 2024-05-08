@@ -40,6 +40,24 @@ const Projects = () => {
                 style={{ strokeWidth: "1px" }}
               />
             </div> */}
+            
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                <img src={CIBCSquare} alt="" className="w-full h-full"></img>
+              </div>
+              <p className="pl-7 py-3">
+                Application Developer<br></br>CIBC
+              </p>
+              <div className="flex flex-row">
+                <p className="pl-7">Co-op</p>
+                <button
+                  onClick={() => navigate("/CIBC")}
+                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
+                >
+                  <MdOutlineArrowForwardIos />
+                </button>
+              </div>
+            </div>
 
             <div className="border border-black h-80 rounded-2xl relative">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
@@ -103,10 +121,29 @@ const Projects = () => {
                 <img src={igem} alt="" className="h-full w-full"></img>
               </div>
               <p className="pl-7 py-3">
-                Math & Modelling, Human Practice<br></br>UW iGEM
+                Member (Math, Human Practices)<br></br>UW iGEM
               </p>
               <div className="flex flex-row">
                 <p className="pl-7">Design Team</p>
+                <button
+                  onClick={() => navigate("/IGEM")}
+                  className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
+                >
+                  <MdOutlineArrowForwardIos />
+                </button>
+              </div>
+            </div>
+
+            <div className="border border-black h-80 rounded-2xl relative">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[210px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
+                <img src={igem} alt="" className="h-full w-full"></img>
+              </div>
+              <p className="pl-7 py-3">
+                Logistics Coordinator<br></br>Canadian Engineering Competition
+              </p>
+              <div className="flex flex-row">
+                <p className="pl-7">Volunteering</p>
                 <button
                   onClick={() => navigate("/IGEM")}
                   className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]"
