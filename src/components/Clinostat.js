@@ -1,10 +1,25 @@
-import React from "react";
-import Clinostat from "../assets/Clinostat.JPG";
+import React, { useRef } from "react";
+import Clinostat from "../assets/ClinoFinal.JPG";
+import ClinoParts from "../assets/ClinoParts.JPG";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowBackIos } from "react-icons/md";
+import Swiper from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Microgravity = () => {
   const navigate = useNavigate();
+  const images = [Clinostat, ClinoParts]
+  const swipy = useRef(null);
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+  }
   return (
     <div className="h-screen flex flex-col justify-center items-center">
       <div className="flex flex-row">
@@ -23,11 +38,20 @@ const Microgravity = () => {
       </div>
       <div className="flex flex-row h-[90vh] items-center w-5/6 mx-auto">
         <div className="w-1/3">
-          <img
+          {/* <img
             className="border border-black h-full p-5 border-[1px] mx-auto"
             alt=""
             src={Clinostat}
-          ></img>
+          ></img> */}
+          <Swiper ref={swipy} {...settings}>
+            {images.map((image) => (
+              <img
+              className="border border-black h-full p-5 border-[1px] mx-auto"
+              alt=""
+              src={image}
+            />
+            ))}
+          </Swiper>
         </div>
         <div className="flex flex-col w-2/3 mx-auto px-20">
           <div

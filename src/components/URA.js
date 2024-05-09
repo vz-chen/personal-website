@@ -53,6 +53,9 @@ const URA = () => {
             Created an algorithm to output a graph of forces applied to a foot
             from Tekscan pressure sensors on MATLAB
           </li>
+          <p className="pt-5 underline w-full text-xl mx-auto">
+            <a href="http://hdl.handle.net/10012/20457">Click here to see the full thesis!</a>
+          </p>
         </div>
       </div>
     </div>

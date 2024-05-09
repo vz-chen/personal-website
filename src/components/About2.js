@@ -57,7 +57,7 @@ const About = () => {
             {" "}
             <p className="w-full text-xl mx-auto">
               Welcome to my corner of the internet! I'm a <span className="font-bold">biomedical engineering student</span> at the 
-              <span className="font-bold"> University of Waterloo</span> passionate about biotech, robotics and finding a fall 2024 co-op. I'm also an avid Strava user (for running) and <span className="font-bold">lover of bunnies</span>. 
+              <span className="font-bold"> University of Waterloo</span> passionate about biotech, robotics and finding a fall 2024 co-op. I'm also an avid Strava user (for running) and <span className="font-bold">lover of bunnies</span> 🐰. 
               <br></br><br></br>
               I'm currently an <span className="font-bold">undergraduate researcher at UW's OrthoTron lab</span> focusing on applying deep learning algorithms to smartwatch IMU data to detect arm injuries.
               I'm also an executive member of UW's Chinese Student Association, Canada's largest Chinese social culture club.

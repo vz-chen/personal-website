@@ -8,6 +8,8 @@ import { Routes, Route } from "react-router-dom";
 import Explorations from "./components/Projects";
 import IGEM from "./components/iGEM";
 import Clinostat from "./components/Clinostat";
+import Spaceflight from "./components/Spaceflight";
+import Puzzle from "./components/Puzzle";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/Explorations" element={<Explorations />}></Route>
         <Route path="/IGEM" element={<IGEM />}></Route>
         <Route path="/Clinostat" element={<Clinostat />}></Route>
+        <Route path="/Spaceflight" element={<Spaceflight />}></Route>
+        <Route path="/Puzzle" element={<Puzzle />}></Route>
       </Routes>
     </>
   );

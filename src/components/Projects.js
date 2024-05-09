@@ -10,8 +10,9 @@ import Mousey from "../assets/Mousey.jpg";
 import igem from "../assets/IGEM.jpeg";
 import Caribou from "../assets/Caribou.jpg";
 import MMHSApp from "../assets/MMHSApp.png";
-import Harvard from "../assets/Harvard.jpeg"
-import MicroGrav from "../assets/MicroGrav.jpg"
+import Harvard from "../assets/Harvard.jpeg";
+import MicroGrav from "../assets/MicroGrav.jpg";
+import BasePlate from "../assets/BasePlateConfig.jpg";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ const Projects = () => {
                 <img src={Harvard} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">
-                Mechanical Engineer Intern<br></br>Tearney Lab, Harvard Medical Schoool, Massachusetts ...
+                Mechanical Engineer Intern<br></br>Tearney Lab, Harvard Medical Schoool, ...
               </p>
               <div className="flex flex-row">
                 <p className="pl-7">Co-op</p>
@@ -208,6 +209,22 @@ const Projects = () => {
             <div className="border border-black h-80 rounded-2xl ">
               <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
                 {" "}
+                <img src={BasePlate} alt="" className="w-full h-full"></img>
+              </div>
+              <p className="pl-7 py-3">Parabolic flight Experimental Modelling</p>
+              <div className="flex flex-row">
+                <p className="italic pl-7">SolidWorks</p>
+                <button 
+                onClick={() => navigate("/Spaceflight")}
+                className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]">
+                <MdOutlineArrowForwardIos />
+                </button>
+              </div>
+            </div>
+
+            <div className="border border-black h-80 rounded-2xl ">
+              <div className="border-b-black border-b mx-auto overflow-y-hidden h-[230px] rounded-tl-2xl rounded-tr-2xl">
+                {" "}
                 <img src={Mousey} alt="" className="w-full h-full"></img>
               </div>
               <p className="pl-7 py-3">3-DOF Space Mouse</p>
@@ -225,6 +242,11 @@ const Projects = () => {
               <p className="pl-7 py-3">Caribou Puzzle</p>
               <div className="flex flex-row">
                 <p className="italic pl-7">SolidWorks</p>
+                <button 
+                onClick={() => navigate("/Puzzle")}
+                className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]">
+                <MdOutlineArrowForwardIos />
+                </button>
                 {/* <MdOutlineArrowForwardIos className="mr-7 ml-auto text-[18px] w-[30px] flex transform ease-in-out transition-all hover:text-[20px]" /> */}
               </div>
             </div>

@@ -76,6 +76,9 @@ const Tearney = () => {
           <li className="w-full text-xl mx-auto">
             Electronics fabrication and assembly (soldering, fibre polishing, circuitry)
           </li>
+          <p className="w-full text-xl mx-auto pt-5">
+            CAD drawings and simulation of actual designs can't be disclosed unfortunately 😞
+          </p>
         </div>
       </div>
     </div>
